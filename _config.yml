@@ -1,0 +1,5 @@
+name: David Loiseaux
+markdown: kramdown
+include:
+  - _images
+  - _static

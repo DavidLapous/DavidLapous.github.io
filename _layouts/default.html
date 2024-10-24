@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <!-- link to main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+  </head>
+  <body>
+    <header>
+      <h1 class="title">David Loiseaux</h1>
+      <!-- <img src="photo.jpg" alt="David Loiseaux" class="picture"> -->
+      <p class="subtitle">PhD candidate @
+        <a href="https://www.inria.fr/en/inria-centre-universite-cote-azur">
+          Centre
+				Inria d'Université Côte d'Azur
+        </a></p>
+    </header>
+    <hr>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/research">Research</a></li>
+        <li><a href="/curriculum">CV</a></li>
+        <li><a href="/teaching">Teaching</a></li>
+      </ul>
+    </nav>
+    <hr>
+    <div class="container">
+      {{ content }}
+    </div><!-- /.container -->
+    <hr>
+    <footer>
+      <ul>
+        <li><a href="mailto:david.loiseaux@inria.fr">E-mail</a></li>
+        <li><a href="https://github.com/DavidLapous">GitHub</a></li>
+        <li><a href="https://scholar.google.com/citations?user=oAjKKKcAAAAJ">Google Scholar</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
