@@ -1,43 +1,54 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    <!-- link to main stylesheet -->
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <link rel="icon" type="image/svg" href="/icon_stuff.svg">
-  </head>
-  <body>
-    <header>
-      <h1 class="title">David Loiseaux</h1>
-      <!-- <img src="photo.jpg" alt="David Loiseaux" class="picture"> -->
-      <p class="subtitle">PostDoc @
-        <a href="https://www.inria.fr/fr/centre-inria-de-saclay">
-          Centre Inria de Saclay
-        </a></p>
-    </header>
-    <hr>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/research">Research</a></li>
-        <li><a href="/curriculum">CV</a></li>
-        <li><a href="/teaching">Teaching</a></li>
-      </ul>
-    </nav>
-    <hr>
-    <div class="container">
-      {{ content }}
-    </div><!-- /.container -->
-    <hr>
-    <footer>
-      <ul>
-        <li><a href="mailto:david.loiseaux@inria.fr">E-mail</a></li>
-        <li><a href="https://github.com/DavidLapous">GitHub</a></li>
-        <li><a href="https://scholar.google.com/citations?user=oAjKKKcAAAAJ">Google Scholar</a></li>
-        <li><a href="https://arxiv.org/a/loiseaux_d_1.html">arXiv</a></li>
-        <li><a href="https://www.linkedin.com/in/david-loiseaux/">LinkedIn</a></li>
-      </ul>
-    </footer>
-  </body>
+
+<head>
+	<meta charset="utf-8">
+	<title>{{ page.title }}</title>
+	<!-- link to main stylesheet -->
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
+	<link rel="icon" type="image/svg" href="/icon_stuff.svg">
+</head>
+
+<body>
+	<header>
+		<h1 class="title">David Loiseaux</h1>
+		<!-- <img src="photo.jpg" alt="David Loiseaux" class="picture"> -->
+		<p class="subtitle">PostDoc @
+			<a href="https://www.inria.fr/fr/centre-inria-de-saclay">
+				Centre Inria de Saclay
+			</a>
+			&
+			<a href="https://www.lix.polytechnique.fr/">
+				École Polytechnique (LIX)
+			</a>
+		</p>
+	</header>
+	<hr>
+	<nav>
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/research">Research</a></li>
+			<li><a href="/curriculum">CV</a></li>
+			<li><a href="/teaching">Teaching</a></li>
+		</ul>
+	</nav>
+	<hr>
+	<div class="container">
+		{{ content }}
+	</div><!-- /.container -->
+	<hr>
+	<footer>
+		<ul>
+			<li><a href="mailto:david.loiseaux@inria.fr">E-mail</a></li>
+			<li><a href="https://github.com/DavidLapous">GitHub</a></li>
+			<li><a href="https://scholar.google.com/citations?user=oAjKKKcAAAAJ">Google Scholar</a></li>
+			<li><a href="https://arxiv.org/a/loiseaux_d_1.html">arXiv</a></li>
+			<li><a href="https://www.linkedin.com/in/david-loiseaux/">LinkedIn</a></li>
+		</ul>
+		<div style="text-align: right; color: #888; font-size: 0.85em; margin-top: 0.5em;">
+			[Last update : {{ site.time | date: "%Y-%m-%d" }}]
+		</div>
+	</footer>
+</body>
+
 </html>
